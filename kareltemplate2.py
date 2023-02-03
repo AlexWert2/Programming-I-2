@@ -46,7 +46,7 @@ class ktools:
     self.put()
 
 
-  def main():
+def main():
     """Karel code goes here!"""
     kt = ktools()
 
