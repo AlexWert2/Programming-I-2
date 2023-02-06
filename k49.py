@@ -6,24 +6,22 @@ class ktools:
   def m(self):
     """Shorthand for move"""
     move()
-
   
   def tl(self):
-      """Turn Left"""
-      turn_left()
+    """Turn Left"""
+    turn_left()
 
-  
   def tr(self):
-      """turn_Right"""
-      self.tl()
-      self.tl()
-      self.tl()
-  
+    """Turn Right"""
+    self.tl()
+    self.tl()
+    self.tl()
+
   def ta(self):
-      """Turn Around"""
-      self.tl()
-      self.tl()
-  
+    """Turn Around"""
+    self.tl()
+    self.tl()
+    
   def pick(self):
     """Pick Beeper"""
     pick_beeper()
@@ -46,21 +44,54 @@ class ktools:
     self.m()
     self.put()
 
-  def fic(self):
-   """Front is Clear"""
-   return front_is_clear()
-    
+  def h(self):
+    """Print H using beepers"""
+    self.tl()
+    self.put5()
+    self.tr()
+    self.m()
+    self.m()
+    self.m()
+    self.tr()
+    self.put5()
+    self.ta()
+    self.m()
+    self.m()
+    self.tl()
+    self.m()
+    self.put2()
+    self.tl()
+    self.m()
+    self.m()
+    self.tl()
+    self.m()
+    self.m()
+    self.m()
+    self.m()
+
+  def e(self):
+    pass
+
+  def l(self):
+    pass
+
+  def o(self):
+    pass
+
+  def fic(self) -> bool:
+    """Front is Clear"""
+    return front_is_clear()
+
   def fib(self):
     """Front is Blocked"""
     return not self.fic()
-     
-
+  
   def ric(self):
     """Right is Clear"""
     self.tr()
     if self.fic():
-       self.tl()
-       return True # Immediately exit the function
+      self.tl()
+      return True  # Immediately exit the function
     self.tl()
     return False
 
@@ -68,23 +99,21 @@ class ktools:
     """Right is Blocked"""
     return not self.ric()
 
-
   def mazemove(self):
-    """Maze move"""
+    """Maze Move"""
     if self.fib():
       self.tl()
-    else: # Otherwise...
+    else:  # Otherwise...
       self.m()
-      if self.ric()
+      if self.ric():
         self.tr()
         self.m()
-        if self.ric()  
+        if self.ric():
           self.tr()
           self.m()
-      
-    
+    pass
 
-  def main():
+def main():
     """Karel code goes here!"""
     kt = ktools()
     kt.m()
@@ -92,7 +121,56 @@ class ktools:
     kt.m()
     kt.mazemove()
     sleep(3)
-        
+    kt.m()
+    kt.m()
+    kt.m()
+    kt.m()
+    kt.mazemove()
+    sleep(3)
+    kt.m()
+    kt.tr()
+    kt.m()
+    kt.tr()
+    kt.m()
+    kt.m()
+    kt.m()
+    kt.tr()
+    kt.m()
+    kt.tl()
+    kt.m()
+    kt.m()
+    kt.m()
+    kt.tl()
+    kt.mazemove()
+    sleep(3)
+    kt.m()
+    kt.tr()
+    kt.m()
+    kt.m()
+    kt.m()
+    kt.tr()
+    kt.m()
+    kt.m()
+    kt.tl()
+    kt.m()
+    kt.m()
+    kt.m()
+    kt.ta()
+    kt.mazemove() 
+    kt.sleep(3)
+    
+    
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     pass
 
