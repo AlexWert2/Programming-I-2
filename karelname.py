@@ -43,13 +43,12 @@ class ktools:
     self.m()
     self.put()
 
-  def h(self):
-    """Print H using beepers"""
+  def A(self):
     self.tl()
     self.put5()
     self.tr()
     self.m()
-    self.m()
+    self.put2()
     self.m()
     self.tr()
     self.put5()
@@ -67,24 +66,76 @@ class ktools:
     self.m()
     self.m()
     self.m()
+    
+      
 
-  def e(self):
-    pass
+  def L(self):
+    self.tl()
+    self.put5()
+    self.tr()
+    self.m()
+    self.tr()
+    self.m()
+    self.m()
+    self.m()
+    self.m()
+    self.tl()
+    self.put2()
+    self.m()
+    self.m()
+   
 
-  def l(self):
-    pass
+  def E(self):
+    self.tl()
+    self.put5()
+    self.tr()
+    self.m()
+    self.put2()
+    self.tr()
+    self.m()
+    self.m()
+    self.tr()
+    self.put2()
+    self.tl()
+    self.m()
+    self.m()
+    self.tl()
+    self.put2()
+    self.m()
+    self.m()
 
-  def o(self):
-    pass
-  
+  def X(self):
+    self.put()
+    self.m()
+    self.tl()
+    self.m()
+    self.put()
+    self.m()
+    self.tr()
+    self.m()
+    self.put()
+    self.m()
+    self.tl()
+    self.m()
+    self.put()
+    self.m()
+    self.tr()
+    self.m()
+    self.put()
+    self.ta()
 
 def main():
     """Karel code goes here!"""
     kt = ktools()
+    kt.A()
+    kt.L()
+    kt.E()
+    kt.X()
+   
+    
+    
     
     pass
 
 if __name__ == "__main__":
     run_karel_program()
-
-
