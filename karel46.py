@@ -1,6 +1,9 @@
 from stanfordkarel import *
+  
+def main():
 
-class ktools:
+
+ class ktools:
   def m(self):
     """Shorthand for move"""
     move()
@@ -79,35 +82,14 @@ class ktools:
         if self.ric():  
           self.tr()
           self.m()
-        pass
+      
+    
 
-  def mm(self, num):
-    """Move Multiple"""
-    for number in range(num):
-      self.m()
-
-  def pickm(self, num):
-    """Pick Multiple"""
-    for step in range(num-1):
-      self.pick()
-      self.m()
-    self.pick
-
-  def putm(self, num):
-    """Put Multiple"""
-   for _ in range(0, num-1):
-    self.put()
-    self.m()
-  self.put()
-     
-
-
-     
-def main():  
+  def main():
     """Karel code goes here!"""
     kt = ktools()
 
     pass
 
 if __name__ == "__main__":
-   run_karel_program()
+    run_karel_program()
