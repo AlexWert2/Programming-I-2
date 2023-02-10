@@ -91,8 +91,7 @@ class ktools:
     for step in range(num-1):
       self.pick()
       self.m()
-    self.pick
-
+    self.pick()
 
   def putm(self, num):
     """Put Multiple"""
@@ -101,11 +100,33 @@ class ktools:
      self.m()
     self.put()
      
-     
+
+
      
 def main():  
     """Karel code goes here!"""
     kt = ktools()
+    kt.m()   
+    kt.pickm(2)
+    kt.tl()
+    kt.m()
+    kt.pickm(3)
+    kt.tr()  
+    kt.mm(2)
+    kt.tr()
+    kt.m()
+    kt.m()
+    kt.pickm(2)
+    kt.tl()
+    kt.mm(2)
+    kt.m()
+    kt.pick()
+    kt.m()
+  
+    
+  
+    
+  
 
     pass
 
