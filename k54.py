@@ -43,7 +43,39 @@ class ktools:
     self.m()
     self.put()
 
+  def h(self):
+    """Print H using beepers"""
+    self.tl()
+    self.put5()
+    self.tr()
+    self.m()
+    self.m()
+    self.m()
+    self.tr()
+    self.put5()
+    self.ta()
+    self.m()
+    self.m()
+    self.tl()
+    self.m()
+    self.put2()
+    self.tl()
+    self.m()
+    self.m()
+    self.tl()
+    self.m()
+    self.m()
+    self.m()
+    self.m()
 
+  def e(self):
+    pass
+
+  def l(self):
+    pass
+
+  def o(self):
+    pass
 
   def fic(self) -> bool:
     """Front is Clear"""
@@ -113,7 +145,7 @@ class ktools:
     self.tr()
     self.m()
     self.tr()
-    while self.fic()
+    while self.fic():
       self.m()
     self.tl()
 
@@ -141,9 +173,24 @@ class ktools:
 def main():
     """Karel code goes here!"""
     kt = ktools()
+    kt.mm(4)
+    kt.tl()
+    kt.mm(4)
+    while kt.SOB():
+      kt.pick()
+    kt.tr()
+    kt.m()
+    while kt.SOB():
+      kt.pick()
+      
+    
+      
+        
+    
+
     
     
-  
+    
     pass
 
 if __name__ == "__main__":
