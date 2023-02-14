@@ -114,7 +114,6 @@ class ktools:
     while self.ric():
       self.m()
     self.tr()
-    self.m()
     self.tr()
     while self.fic():
       self.m()
@@ -141,6 +140,25 @@ def find(self):
 def main():  
     """Karel code goes here!"""
     kt = ktools()
+    kt.tl()
+    kt.jump()
+    kt.tl()
+    kt.m()
+    kt.tl()
+    kt.mm(9)
+    kt.pick()
+    kt.tl()
+    kt.m()
+    
+    
+    
+    
+    
+    
+    
+  
+     
+      
     
     
     
