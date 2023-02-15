@@ -141,6 +141,34 @@ def find(self):
 def main():
     """Karel code goes here!"""
     kt = ktools()
+    kt.mm(3)
+    kt.tl()
+    kt.mm(4)
+    kt.put()
+    kt.mazemove()
+    kt.m()
+    kt.mazemove()
+    kt.m()
+    kt.put()
+    kt.tl()
+    kt.mm(3)
+    kt.mazemove()
+    kt.mm(3)
+    kt.put()
+    kt.tl()
+    kt.mm(5)
+    kt.mazemove()
+    kt.ta()
+    kt.m()
+    kt.tr()
+    kt.mm(5)
+    kt.put()
+    kt.tl()
+    kt.mm(4)
+    kt.tl()
+    
+    
+    
     
     
   
